@@ -7,53 +7,97 @@
     <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/style.min.css">
-
-    <title>Detsad</title>
+    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" rel="preload" as="font">
+    <title>Динозаврики</title>
   </head>
 
   <body>
-    <!-- <h1>Hello, world!</h1> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="main-header">
+      <!-- Навигация     -->
+      <nav class="main-nav navbar navbar-expand-lg">
+        <div class="container">
+          <a class="main-nav__logo" href="#">Динозаврики</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="main-nav__icon navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">О нас <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teachers">Преподаватели</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Галерея</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#price">Цены</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#subs">Записаться</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <h2 class="about__title">О нас</h2>
+      </section>
+      <section class="news" id="news">
+        <h2 class="about__title">Новости</h2>
+      </section>
+      <section class="teachers" id="teachers">
+        <h2 class="about__title">Преподаватели</h2>
+      </section>
+      <section class="gallery" id="gallery">
+        <h2 class="about__title">Галерея</h2>
+      </section>
+      <section class="price" id="price">
+        <h2 class="about__title">Цены</h2>
+      </section>
+      <section class="feedback" id="feedback">
+        <h2 class="about__title">Отзывы</h2>
+      </section>
+      <section class="subscription" id="subs">
+        <h2 class="about__title">Записаться</h2>
+      </section>
+    </main>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+    <footer class="main-footer">
+      <div class="container">
+        <!-- <section class="social"> -->
+        <div class="row">
+          <section class="social col-md-6">
+            <div class="social__list">
+              <a class="social__link" href="#"><span class="social__icon social__icon--inst"></span></a>
+              <a class="social__link" href="#"><span class="social__icon social__icon--vk"></span></a>
+              <a class="social__link" href="#"><span class="social__icon social__icon--telegram"></span></a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+          </section>
+          <section class="copyright col-md-6">
+            <p class="copyright__developer">Разработано 2019 | Артем Сазанов</p>
+          </section>
+        </div>
+        <!-- </div> -->
       </div>
-    </nav>
+    </footer>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/js/jquery-3.4.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
   </body>
 
 </html>

@@ -1,0 +1,19 @@
+.main-nav {
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: bisque;
+  border-radius: 0 0 15px 15px;
+}
+
+.main-nav__logo {
+  display: block;
+
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.main-nav__icon {
+  background-image: url("/img/menu.svg");
+}

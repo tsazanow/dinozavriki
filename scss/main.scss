@@ -1,5 +1,10 @@
 @import "vars";
-// @import "fonts";
+@import "fonts";
 @import "libs";
 @import "scaffolding";
+@import "../scss/_blocks/main-header.scss";
+@import "../scss/_blocks/main-nav.scss";
+@import "../scss/_blocks/main-footer.scss";
+@import "../scss/_blocks/social.scss";
+@import "../scss/_blocks/copyright.scss";
 
