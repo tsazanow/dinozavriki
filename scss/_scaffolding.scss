@@ -2,6 +2,7 @@
 
 html,
 body {
+  min-width: 320px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -20,8 +21,8 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1400px;
+.wrapper {
+  min-width: 290px;
   margin: 0 auto;
   padding: 0 15px;
 }

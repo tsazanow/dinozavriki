@@ -30,3 +30,11 @@
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Foo-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+
+  src: url("../fonts/foo.woff2") format("woff2"), url("../fonts/foo.woff") format("woff");
+}
