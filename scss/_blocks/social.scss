@@ -14,26 +14,36 @@
 
 .social__link {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .social__icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 
   background-repeat: no-repeat;
+  border-radius: 50%;
 
   &--vk {
-    background-image: url("/img/vk-brands.svg");
+    background-color: #4a76a8;
+    background-image: url("/img/vk.png");
+    background-position: center;
+    background-size: 40px 40px;
+    opacity: 1;
   }
 
-  &--inst {
-    background-image: url("/img/instagram-brands.svg");
+  &--whatsapp {
+    background-color: green;
+    background-image: url("/img/whatsapp.png");
+    background-size: 40px 40px;
+    background-position: center;
+    opacity: 1;
   }
 
-  &--telegram {
-    background-image: url("/img/telegram-brands.svg");
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 }
