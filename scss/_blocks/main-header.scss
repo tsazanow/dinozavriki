@@ -6,14 +6,27 @@
   padding: 0;
 
   background-color: azure;
-  // background-image: url("/img/bg-header.jpg");
+  background-image: url("/img/bg-header.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .main-header__hero {
-  min-height: 500px;
+  min-height: 650px;
   margin: 0;
   padding: 0;
   padding-top: 200px;
 
   background-color: transparent;
+}
+
+.main-header__title {
+  color: black;
+  text-shadow: 1px 1px 3px white;
+}
+
+.main-header__text {
+  color: black;
+  text-shadow: 1px 1px 3px white;
 }

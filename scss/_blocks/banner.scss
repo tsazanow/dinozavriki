@@ -1,0 +1,23 @@
+.banner {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: orange;
+  background-image: url("/img/bg-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.banner__text {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-family: $main-font;
+  font-size: 20px;
+
+  color: #ffffff;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+}

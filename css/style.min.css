@@ -8201,14 +8201,26 @@ img {
   min-height: 500px;
   margin: 0 auto;
   padding: 0;
-  background-color: azure; }
+  background-color: azure;
+  background-image: url("/img/bg-header.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat; }
 
 .main-header__hero {
-  min-height: 500px;
+  min-height: 650px;
   margin: 0;
   padding: 0;
   padding-top: 200px;
   background-color: transparent; }
+
+.main-header__title {
+  color: black;
+  text-shadow: 1px 1px 3px white; }
+
+.main-header__text {
+  color: black;
+  text-shadow: 1px 1px 3px white; }
 
 .main-nav {
   width: 100%;
@@ -8270,6 +8282,26 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: black; }
+
+.banner {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: orange;
+  background-image: url("/img/bg-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%; }
+
+.banner__text {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px black;
+  text-align: center; }
 
 .main-footer {
   width: 100%;
@@ -8400,13 +8432,18 @@ img {
     background-image: url("/img/education.jpg");
     background-position: center; }
   .slides__item--english {
-    background-image: url("/img/english.jpg");
+    background-image: url("/img/eng.jpg");
     background-position: center; }
 
 .slides__item-title {
   font-family: "OpenSans Bold";
   font-size: 2.25rem;
   text-shadow: 1px 1px 3px black; }
+  .slides__item-title--header {
+    padding-top: 150px;
+    font-size: 2.25rem;
+    color: #ffffff;
+    text-align: center; }
 
 .slides__item-text {
   font-size: 16px;
