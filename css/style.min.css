@@ -8375,16 +8375,15 @@ img {
   min-height: 500px;
   background-color: green; }
 
+.about__title {
+  margin: 0 auto;
+  text-align: center; }
+
 .about__card {
   width: 100%;
-  min-height: 200px;
-  margin: 0 auto;
   margin-bottom: 10px;
   padding: 0;
   background-color: pink; }
-
-.about__card-overlay {
-  position: relative; }
 
 .about__text {
   margin: 0 auto;
@@ -8435,16 +8434,21 @@ img {
     background-image: url("/img/eng.jpg");
     background-position: center; }
 
-.slides__item-title {
+.slides__title {
   font-family: "OpenSans Bold";
   font-size: 2.25rem;
   text-shadow: 1px 1px 3px black; }
-  .slides__item-title--header {
+  .slides__title--header {
     padding-top: 150px;
     font-size: 2.25rem;
     color: #ffffff;
     text-align: center; }
 
-.slides__item-text {
+.slides__caption {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.slides__text {
   font-size: 16px;
+  color: #ffffff;
   text-shadow: 1px 1px 3px black; }
