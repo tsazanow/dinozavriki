@@ -8,14 +8,13 @@
 }
 
 .main-nav__title {
-  display: block;
+  display: inline-block;
   margin-right: 20px;
 
   font-family: $logo-font;
   font-size: 28px;
   color: green;
   text-transform: uppercase;
-
 
   &:hover,
   &:focus {
@@ -26,6 +25,10 @@
 .main-nav__logo {
   margin: 0;
   padding: 0;
+}
+
+.main-nav__logo-link {
+  text-decoration: none;
 }
 
 .main-nav__icon {

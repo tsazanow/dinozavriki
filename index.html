@@ -19,12 +19,13 @@
       <!-- Навигация     -->
       <nav class="main-nav navbar navbar-expand-lg">
         <div class="container">
-          <a class="main-nav__logo-link d-none d-sm-block" href="#">
-            <img class="main-nav__logo" src="img/dino-egg.png" width="60px" height="60px">
+          <a class="main-nav__logo-link" href="#">
+            <img class="main-nav__logo d-none d-sm-block" src="img/dino-egg.png" width="60px" height="60px">
           </a>
-          <span class="main-nav__title">Динозаврики</span>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="main-nav__logo-link" href="#">
+            <span class="main-nav__title">Динозаврики</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="main-nav__icon navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -74,7 +75,6 @@
       </div>
     </header>
     <main>
-
       <section class="about" id="about">
         <div class="wrapper">
           <div class="container">
@@ -153,7 +153,6 @@
           </div>
         </div>
       </section>
-
       <section class="banner">
         <div class="container">
           <p class="banner__text">Детский развивающий клуб "Динозаврики" на Кукковке станет прекрасным дополнением в
@@ -161,7 +160,6 @@
             мальчикам и девочкам вырасти целеустремлёнными и любознательными, добрыми, умными и самостоятельными.</p>
         </div>
       </section>
-
       <section class="classes col-md-12" id="classes">
         <!-- <div class="wrapper"> -->
         <h2 class="classes__title">Занятия</h2>
@@ -244,30 +242,75 @@
         <div class="wrapper">
           <h2 class="teachers__title">Педагоги</h2>
           <div class="container">
-            <div class="card-deck">
-              <div class="card">
-                <img src="/img/cersei.png" width="202" height="220" class="card-img-top" alt="...">
+            <div class="teachers__deck card-deck">
+              <div class="teachers__card card">
+                <img src="img/yana1.png" width="202" height="220" class="teachers__card-img card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-              <div class="card">
-                <img src="/img/jamie.png" width="202" height="220" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  <h5 class="card-title">Николаева Яна Игоревна</h5>
+                  <p class="card-text">руководитель Клуба, психолог, педагог.
                   </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <button type="button" class="button button--modal btn btn-primary" data-toggle="modal" data-target="#yana">
+                    Узнать больше
+                  </button>
+                  <div class="modal fade" id="yana" tabindex="-1" role="dialog" aria-labelledby="yanaTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="yanaTitle">Николаева Яна Игоревна</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Образование высшее. Окончила Санкт-Петербургский государственный университет Культуры и Искусств по специальности психология. Большой опыт работы в педагогической деятельности, много дипломов и сертификатов. Счастливая мама троих девочек, любимая и любящая жена. Обожаю всё, что связано с детьми, пишу свои конспекты для развивающих занятий. Главным в жизни считаю тёплые отношения в семье, доверие и поддержку близких.
+                          </p>
+                          <img src="img/yana2.png" width="202" height="220" class="card-img-top" alt="Николаева Яна">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button button--close btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="teachers__card card">
+                <img src="img/polina2.png" width="202" height="220" class="teachers__card-img card-img-top" alt="Сафонова Полина">
+                <div class="card-body">
+                  <h5 class="card-title">Сафонова Полина Александровна</h5>
+                  <p class="card-text">Преподаватель английского языка.</p>
+                </div>
+                <div class="card-footer">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="button button--modal btn btn-primary" data-toggle="modal" data-target="#polina">
+                    Узнать больше
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="polina" tabindex="-1" role="dialog" aria-labelledby="polinaTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="polinaTitle">Сафонова Полина Александровна</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Высшее образование. Окончила Карельскую государственную педагогическую Академию по специальности учитель английского и финского языка. Училась в художественной школе, которую закончила с отличием. Училась заграницей на языковых курсах. Любит путешествовать, изучать иностранные языки и работать с детьми. Счастливая жена и мама доченьки.
+                          </p>
+                          <img src="img/polina1.png" width="202" height="220" class="card-img-top" alt="Сафонова Полина">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button button--close btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card">
                 <img src="/img/jonsnow.png" width="202" height="220" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -278,12 +321,11 @@
                 <div class="card-footer">
                   <small class="text-muted">Last updated 3 mins ago</small>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
-
       <section class="price" id="price">
         <h2 class="price__title">Цены</h2>
       </section>
@@ -296,14 +338,18 @@
       <section class="subscription" id="subs">
         <h2 class="subscription__title">Записаться</h2>
       </section>
+      <section class="map">
+        <!-- <div class="wrapper"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.5110678637266!2d34.37295111568033!3d61.765460120387964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46a1ecff715eac45%3A0x821193fc6f8b510e!2z0YPQuy4g0KDQvtCy0LjQviwgMTLQkCwg0J_QtdGC0YDQvtC30LDQstC-0LTRgdC6LCDQoNC10YHQvy4g0JrQsNGA0LXQu9C40Y8sIDE4NTAyNg!5e0!3m2!1sru!2sru!4v1566432652397!5m2!1sru!2sru" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- </div> -->
+      </section>
     </main>
     <footer class="main-footer">
-      <div class="wrapper container">
+      <div class="container">
         <div class="row">
           <section class="social col-md-6">
             <div class="social__list">
-              <a class="social__link" href="#"><span class="social__icon social__icon--whatsapp"
-                      title="WhatsApp"></span></a>
+              <a class="social__link" href="#"><span class="social__icon social__icon--whatsapp" title="WhatsApp"></span></a>
               <a class="social__link" href="#"><span class="social__icon social__icon--vk" title="Вконтакте"></span></a>
               <!-- <a class="social__link" href="#"><span class="social__icon social__icon--telegram"></span></a> -->
             </div>

@@ -12,6 +12,10 @@ body {
   background-color: #fff;
 }
 
+main {
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,6 +28,7 @@ img {
 .wrapper {
   min-width: 290px;
   max-width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 0 15px;
 }
