@@ -3,24 +3,13 @@
   text-transform: uppercase;
   border-radius: 6px;
 
-  &--modal {
-    background-color: blue;
-    margin: 0 auto;
+  // &--modal {
+  //   background-color: blue;
+  //   margin: 0 auto;
+  // }
 
-    // &:hover,
-    // &:focus {
-    //   background-color: rgba(green, 0.7);
-    //   border: 1px solid rgba(green, 0.7);
-    // }
-
-    // &:active {
-    //   background-color: rgba(green, 0.5);
-    //   border: 1px solid rgba(green, 0.5);
-    // }
-  }
-
-  &--close {
-    background-color: coral;
-    border-color: coral;
-  }
+  // &--close {
+  //   background-color: coral;
+  //   border-color: coral;
+  // }
 }

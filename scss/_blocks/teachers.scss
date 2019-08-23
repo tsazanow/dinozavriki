@@ -6,6 +6,20 @@
 }
 
 .teachers__card-img {
-  width: 100%;
+  width: 400px;
   height: auto;
+  margin: 0 auto;
+
+  border: 2px solid whitesmoke;
+  border-radius: 5%;
 }
+
+.teachers__card-footer,
+.teachers__card-title,
+.teachers__card-text {
+  text-align: center;
+}
+
+// .teachers__modal-body {
+//   text-align: start;
+// }
