@@ -8317,7 +8317,7 @@ img {
   padding: 0;
   background-color: azure; }
 
-.social__list {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8410,6 +8410,7 @@ img {
   width: 400px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 15px;
   border: 2px solid whitesmoke;
   border-radius: 5%; }
 
@@ -8437,6 +8438,38 @@ img {
   width: 100%;
   min-height: 300px;
   background-color: pink; }
+
+.subscription__item {
+  margin-bottom: 15px; }
+  .subscription__item--phone {
+    text-align: left; }
+
+.subscription__title {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding-top: 15px;
+  text-align: center; }
+
+.subscription__phone-title,
+.subscription__social-title,
+.subscription__address-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "OpenSans Bold";
+  text-align: center; }
+
+.subscription__address-text,
+.subscription__phone-text {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center; }
+
+.subscription__button {
+  margin-bottom: 30px; }
+
+.subscription__social-list {
+  margin: 0 auto; }
 
 .slides__item {
   width: 100%;
