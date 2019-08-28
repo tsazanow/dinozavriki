@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
     <link href="fonts/opensans.woff2" rel="preload" as="font">
     <link href="fonts/opensanslight.woff2" rel="preload" as="font">
     <link href="fonts/opensansbold.woff2" rel="preload" as="font">
@@ -15,7 +16,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="page-header page-header--gallery">
       <!-- Навигация     -->
       <nav class="main-nav navbar navbar-expand-lg">
         <div class="container">
@@ -30,83 +31,231 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="main-nav__list navbar-nav ml-auto">
               <li class="main-nav__item nav-item active">
-                <a class="main-nav__link nav-link" href="#about">О нас <span class="sr-only">(current)</span></a>
+                <a class="main-nav__link nav-link" href="index.html#about">О нас <span
+                        class="sr-only">(current)</span></a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#classes">Занятия</a>
+                <a class="main-nav__link nav-link" href="index.html#classes">Занятия</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#teachers">Педагоги</a>
+                <a class="main-nav__link nav-link" href="index.html#teachers">Педагоги</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#gallery">Фото</a>
+                <a class="main-nav__link nav-link" href="photo.html">Фото</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#price">Цены</a>
+                <a class="main-nav__link nav-link" href="index.html#price">Цены</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#schedule">Расписание</a>
+                <a class="main-nav__link nav-link" href="index.html#schedule">Расписание</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#feedback">Отзывы</a>
+                <a class="main-nav__link nav-link" href="index.html#feedback">Отзывы</a>
               </li>
               <li class="main-nav__item nav-item">
-                <a class="main-nav__link nav-link" href="#subs">Записаться</a>
+                <a class="main-nav__link nav-link" href="photo.html#subs">Записаться</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="main-header__hero jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="main-header__title">Ваш малыш подрастает и пришло время подыскивать хороший развивающий клуб?</h1>
-          <hr class="my-4">
-          <p class="lead">Детский развивающий Клуб "Динозаврики" на Кукковке соответствует запросам самых взыскательных
-            мам и пап, которые
-            хотят для своего ребёнка самого лучшего! Здесь работает группа раннего развития для деток с 9 месяцев, а
-            также группы
-            для деток постарше!</p>
-          <hr class="my-4">
-          <p>Мы находимся в Петрозаводске на Кукковке, ул. Ровио 12А.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Записаться</a>
-        </div>
+      <div class="container">
+        <h1 class="page-header__title page-header__title--gallery">Фотогалерея</h1>
       </div>
     </header>
     <main>
-
-
       <section class="gallery" id="gallery">
-        <h2 class="gallery__title">Фото</h2>
+        <div class="container">
+            <h2 class="visually-hidden gallery__title">Фотографии</h2>
+
+          <div class="row">
+           <nav id="filter" class="col-md-12">
+             <ul>
+               <li><a href="#" class="current btn-theme btn-small" data-filter="*">Все</a></li>
+               <li><a href="#" class="btn-theme btn-small" data-filter=".bday">День рождения</a></li>
+               <li><a href="#" class="btn-theme btn-small" data-filter=".open">Открытие</a></li>
+               <!-- <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li> -->
+             </ul>
+           </nav>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="gallery__item col-lg-3 col-md-4 col-6 bday" id="birthday">
+                <a data-fancybox="gallery" data-caption="Описание" title="День рождения" href="/img/photo-kid-big.jpg">
+                  <img class="img-fluid" src="/img/photo-kid-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 open" id="open">
+                <a data-fancybox="gallery" title="открытие" href="/img/photo-2-big.jpg">
+                  <img class="img-fluid" src="/img/photo-2-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 bday" id="birthday">
+                <a data-fancybox="gallery" title="День рождения" href="/img/photo-kid-big.jpg">
+                  <img class="img-fluid" src="/img/photo-kid-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 open" id="open">
+                <a data-fancybox="gallery" title="открытие" href="/img/photo-2-big.jpg">
+                  <img class="img-fluid" src="/img/photo-2-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 bday" id="birthday">
+                <a data-fancybox="gallery" title="День рождения" href="/img/photo-kid-big.jpg">
+                  <img class="img-fluid" src="/img/photo-kid-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 open" id="open">
+                <a data-fancybox="gallery" title="открытие" href="/img/photo-2-big.jpg">
+                  <img class="img-fluid" src="/img/photo-2-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 bday" id="birthday">
+                <a data-fancybox="gallery" title="День рождения" href="/img/photo-kid-big.jpg">
+                  <img class="img-fluid" src="/img/photo-kid-big.jpg" alt="...">
+                </a>
+              </div>
+              <div class="gallery__item col-lg-3 col-md-4 col-6 open" id="open">
+                <a data-fancybox="gallery" title="открытие" href="/img/photo-2-big.jpg">
+                  <img class="img-fluid" src="/img/photo-2-big.jpg" alt="...">
+                </a>
+              </div>
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+        </div>
       </section>
 
       <section class="subscription" id="subs">
-        <h2 class="subscription__title">Записаться</h2>
+        <div class="container">
+          <h2 class="subscription__title">Как с нами связаться?</h2>
+          <div class="container">
+            <div class="row">
+              <div class="subscription__item subscription__item--phone col-md-4">
+                <h5 class="subscription__phone-title">Звоните по телефону:</h5>
+                <a href="tel:+78125556666" class="subscription__phone-text">+7 (812) 555-66-66</a>
+              </div>
+              <div class="subscription__item col-md-4">
+                <h5 class="subscription__address-title">Мы находимся по адресу:</h5>
+                <a href="#map" class="subscription__address-text">г.Петрозаводск, р-он Кукковка, ул. Ровио 12А</a>
+              </div>
+              <div class="subscription__item col-md-4">
+                <h5 class="subscription__social-title">Пишите нам в соцсетях:</h5>
+                <div class="subscription__social-list social">
+                  <a class="social__link" href="#"><span class="social__icon social__icon--whatsapp"
+                          title="WhatsApp"></span></a>
+                  <a class="social__link" href="#"><span class="social__icon social__icon--vk"
+                          title="Вконтакте"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="subscription__button my-5 mx-auto text-center">
+              <button class="button btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Запишитесь к
+                нам!</button>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="contactForm" action="handler.php" method="post">
+                    <div class="form-group">
+                      <label for="name">Ваше имя:</label>
+                      <input id="name" class="form-control" name="name" required type="text"
+                             placeholder="Иванов Иван Иванович">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Ваш E-mail:</label>
+                      <input id="email" class="form-control" name="email" required type="text"
+                             placeholder="ivanov@email.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Ваш телефон:</label>
+                      <input id="phone" class="form-control" name="phone" required type="text"
+                             placeholder="+7 (800) 000-00-00">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Текст сообщения:</label>
+                      <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                      <input id="check" class="form-check-input" checked type="checkbox">
+                      <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
+                    </div>
+                    <button id="button" class="btn btn-success" type="submit">Отправить</button>
+                    <div class="result">
+                      <span id="answer"></span>
+                      <span id="loader" style="display:none"><img src="img/loader.gif" alt=""></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.5110678637266!2d34.37295111568033!3d61.765460120387964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46a1ecff715eac45%3A0x821193fc6f8b510e!2z0YPQuy4g0KDQvtCy0LjQviwgMTLQkCwg0J_QtdGC0YDQvtC30LDQstC-0LTRgdC6LCDQoNC10YHQvy4g0JrQsNGA0LXQu9C40Y8sIDE4NTAyNg!5e0!3m2!1sru!2sru!4v1566432652397!5m2!1sru!2sru"
+                width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="wrapper container">
+    <footer class="main-footer pt-4 pt-md-5 border-top">
+      <div class="container">
         <div class="row">
-          <section class="social col-md-6">
-            <div class="social__list">
-              <a class="social__link" href="#"><span class="social__icon social__icon--whatsapp"
-                      title="WhatsApp"></span></a>
-              <a class="social__link" href="#"><span class="social__icon social__icon--vk" title="Вконтакте"></span></a>
-              <!-- <a class="social__link" href="#"><span class="social__icon social__icon--telegram"></span></a> -->
-            </div>
-          </section>
-          <section class="copyright col-md-6">
-            <p class="copyright__developer">Разработано 2019 | Артем Сазанов</p>
-            <p class="copyright__art">
-              <a href="https://www.freepik.com/free-photos-vectors/pattern">Pattern vector created by freepik -
-                www.freepik.com</a>
-            </p>
-          </section>
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/img/dino-egg.png" alt="" width="50" height="50">
+            <small class="d-block mb-3 text-muted">ДРЦ"Динозаврики" © 2019</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Меню</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="index.html#about">О нас</a></li>
+              <li><a class="text-muted" href="index.html#classes">Занятия</a></li>
+              <li><a class="text-muted" href="index.html#teachers">Педагоги</a></li>
+              <li><a class="text-muted" href="photo.html">Фото</a></li>
+              <li><a class="text-muted" href="index.html#price">Цены</a></li>
+              <li><a class="text-muted" href="index.html#schedule">Расписание</a></li>
+              <li><a class="text-muted" href="index.html#feedback">Отзывы</a></li>
+              <li><a class="text-muted" href="photo.html#subs">Записаться</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Занятия и услуги</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Английский язык</a></li>
+              <li><a class="text-muted" href="#">"Няня на час"</a></li>
+              <li><a class="text-muted" href="#">Праздники</a></li>
+              <li><a class="text-muted" href="#">Творчество</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Материалы на сайте</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/pattern">Pattern vector
+                  created by freepik</a></li>
+              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Kids">Kids photo created by
+                  freepik</a></li>
+              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Background">Background photo
+                  created by rawpixel.com</a></li>
+              <!-- <li><a class="text-muted" href="#">Terms</a></li> -->
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="libs/js/jquery-3.4.1.min.js"></script>
-    <script src="libs/js/popper.min.js"></script>
-    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery.fancybox.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 
 </html>

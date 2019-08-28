@@ -1,0 +1,49 @@
+.page-header {
+  width: 100%;
+  min-height: 500px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: azure;
+  background-image: url("/img/bg-header.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &--gallery {
+    min-height: 400px;
+    background-image: url("/img/bg-gallery.jpg");
+    background-position: 0 30%;
+  }
+}
+
+.page-header__hero {
+  min-height: 650px;
+  margin: 0;
+  padding: 0;
+  padding-top: 200px;
+
+  background-color: transparent;
+}
+
+.page-header__title {
+  color: black;
+  text-shadow: 1px 1px 3px white;
+
+  &--gallery {
+    margin: 0 auto;
+    margin-top: 100px;
+
+    font-family: $main-font-bold;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+  }
+}
+
+.page-header__text {
+  color: black;
+  text-shadow: 1px 1px 3px white;
+}
