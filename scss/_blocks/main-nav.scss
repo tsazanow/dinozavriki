@@ -5,7 +5,7 @@
   background-color: bisque;
   // background-color: transparent;
   border-radius: 0 0 15px 15px;
-  box-shadow: 1px 1px 0 1px rgba($color: grey, $alpha: 0.7);
+  box-shadow: 1px 1px 0 1px rgba($color: grey, $alpha: 0.5);
 }
 
 .main-nav__title {
@@ -51,7 +51,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: red;
+    background-color: green;
     transform: scaleX(0);
     transition: transform 0.5s;
   }
@@ -69,4 +69,9 @@
   text-align: center;
   text-transform: uppercase;
   color: black;
+
+  &:hover,
+  &:focus {
+    color: green;
+  }
 }

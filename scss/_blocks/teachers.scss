@@ -1,8 +1,21 @@
 .teachers {
   width: 100%;
   min-height: 300px;
+  margin-bottom: 40px;
 
-  background-color: purple;
+  background-color: transparent;
+}
+
+.teachers__title {
+  margin: 40px auto;
+  text-align: center;
+
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.teachers__card {
+  padding-top: 10px;
 }
 
 .teachers__card-img {
@@ -12,7 +25,7 @@
   margin-bottom: 15px;
 
   border: 2px solid whitesmoke;
-  border-radius: 5%;
+  border-radius: 0.25rem;
 }
 
 .teachers__card-footer,
@@ -20,5 +33,3 @@
 .teachers__card-text {
   text-align: center;
 }
-
-

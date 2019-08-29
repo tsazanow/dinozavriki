@@ -9,7 +9,11 @@ body {
   font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   color: #000;
 
-  background-color: #fff;
+  background-color: grey;
+  background-image: url("../img/bg-main.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 5616px 3744px;
 }
 
 main {
