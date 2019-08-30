@@ -163,7 +163,7 @@
         <h2 class="visually-hidden classes__title">Занятия</h2>
         <div class="classes__slides slides bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <ol class="slides__indicators carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
@@ -174,7 +174,7 @@
                 <h5 class="slides__title slides__title--header d-md-none">Услуга<br> "Няня на час"</h5>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Услуга "Няня на час"</h5>
-                  <!-- <hr class="my-5"> -->
+                  <hr class="my-4">
                   <p class="slides__text">Мы понимаем, как часто мамочкам не хватает времени на себя, и даже
                     элементарно сходить в магазин одной - это уже как
                     маленький отпуск.</p>
@@ -191,7 +191,7 @@
                 <h5 class="slides__title slides__title--header d-md-none">Развивающие<br> занятия</h5>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Развивающие занятия</h5>
-                  <!-- <hr class="my-5"> -->
+                  <hr class="my-4">
                   <p class="slides__text">Все занятия в нашем Клубе "Динозаврики" проводятся в игровой форме.</p>
                   <hr class="my-4">
                   <p class="slides__text">Обычно занятие длится около часа или чуть больше. И в план каждого
@@ -209,7 +209,7 @@
                   3-5 лет</h5>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Группа английского языка для детей 3-5 лет</h5>
-                  <!-- <hr class="my-5"> -->
+                  <hr class="my-4">
                   <p class="slides__text">Спешите записаться на субботние занятия по английскому языку, которые
                     будут еженедельно проходить в нашем Клубе!</p>
                   <hr class="my-4">
@@ -373,7 +373,7 @@
             <div class="row">
               <div class="subscription__item subscription__item--phone col-md-4">
                 <h5 class="subscription__phone-title">Звоните по телефону:</h5>
-                <a href="tel:+78125556666" class="subscription__phone-text">+7 (812) 555-66-66</a>
+                <a href="tel:+79004594856" class="subscription__phone-text">+7 (900) 459-48-56</a>
               </div>
               <div class="subscription__item col-md-4">
                 <h5 class="subscription__address-title">Мы находимся по адресу:</h5>
@@ -383,20 +383,20 @@
                 <h5 class="subscription__social-title">Пишите нам в соцсетях:</h5>
                 <div class="subscription__social-list social">
                   <a class="social__link" href="#"><span class="social__icon social__icon--whatsapp" title="WhatsApp"></span></a>
-                  <a class="social__link" href="#"><span class="social__icon social__icon--vk" title="Вконтакте"></span></a>
+                  <a class="social__link" href="https://vk.com/public183621668"><span class="social__icon social__icon--vk" title="Вконтакте"></span></a>
                 </div>
               </div>
             </div>
-            <div class="subscription__button my-5 mx-auto text-center">
-              <button class="button btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Запишитесь к
+            <div class="subscription__button mx-auto text-center">
+              <button class="button btn btn-success btn-lg" data-toggle="modal" data-target="#connect">Запишитесь к
                 нам!</button>
             </div>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="connect" tabindex="-1" role="dialog" aria-labelledby="connectlLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                  <h5 class="modal-title" id="connectLabel">Обратная связь</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -459,13 +459,109 @@
               <li><a class="text-muted" href="index.html#subs">Записаться</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md">
+          <div class="details col-6 col-md">
             <h5>Занятия и услуги</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Английский язык</a></li>
-              <li><a class="text-muted" href="#">"Няня на час"</a></li>
-              <li><a class="text-muted" href="#">Праздники</a></li>
-              <li><a class="text-muted" href="#">Творчество</a></li>
+              <li>
+                <a class="text-muted" href="#" data-toggle="modal" data-target="#english">Субботний английский язык</a>
+                <div class="details__modal modal fade" id="english" tabindex="-1" role="dialog" aria-labelledby="english" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="englishLabel">Субботний английский язык</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/ssimple.jpg" width="202" height="220" class="details__modal-img card-img-top" alt="Субботний английский язык">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
+                              Hey everyone!
+                              Мальчишки и девчонки! А Также их родители! Спешите записаться на субботние занятия по английскому языку, которые будут еженедельно проходить в нашем Клубе! Мы будем заниматься по уникальной системе Super Simple, которая включает в себя веселые обучающие песенки, игры, изучение алфавита и многое другое - все то, что будет интересно малышам и ребятам дошкольного возраста! На наших занятиях мы будем обсуждать самые важные повседневные темы (цвета, времена года, одежда, еда и т.д.), что позволит детям сформировать необходимый пассивный и активный словарный запас. Важно, что уроки будут проходить на английском языке!
+                              Ждем вас с нетерпением!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="text-muted" href="#nanny" data-toggle="modal" data-target="#nanny">"Няня на час"</a>
+                <div class="details__modal modal fade" id="nanny" tabindex="-1" role="dialog" aria-labelledby="nanny" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="nannyLabel">"Няня на час"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/nanny.jpg" width="202" height="220" class="details__modal-img card-img-top" alt="Няня на час">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
+                              "И что, можно просто оставить ребёнка на час и пойти по своим делам?" - такой вопрос от мамочек мы очень часто слышим в последнее время! Отвечаем - "ДА"! Не только можно, но и нужно
+                              Во время занятий детки в нашем Клубе находятся под присмотром опытных и профессиональных педагогов! Исключение - группа малышей с 9 месяцев, там они находятся с мамой
+                              Мы понимаем, как часто мамочкам не хватает времени на себя, и даже элементарно сходить в магазин одной - это уже как маленький отпуск
+                              Не бойтесь довериться профессионалам, и в итоге и Вы отдохнёте или сделаете то, на что не всегда хватает времени каждый день, и Ваш малыш за это время узнает много нового и интересного
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="text-muted" href="#lego" data-toggle="modal" data-target="#lego">Лего-конструирование</a>
+                <div class="details__modal modal fade" id="lego" tabindex="-1" role="dialog" aria-labelledby="lego" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="legoLabel">Лего-конструирование</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/lego.jpg" width="202" height="220" class="details__modal-img card-img-top" alt="Лего-конструирование">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">Лего-конструирование – это занимательный материал, стимулирующий детскую фантазию, воображение, формирующий моторные навыки.Во время игры с Лего-конструктором включаются различные группы мышц, происходит развитие и коррекция моторики рук.
+                              На кружках по лего-конструированию дети развивают творческое и пространственное мышление, логику, навыки программирования и работы в коллективе.
+                              На занятиях по лего-конструированию дети учатся и логике, и воображению. С одной стороны, они представляют то, как будет выглядеть результат, а с другой — следуют чёткой последовательности
+                              Также лего - конструирование - это развитие усидчивости и вдумчивости.
+                              Многие дети почти сразу же хотят получить результат, пропустив несколько скучных этапов. Но если педагог будет корректно возвращать их к последовательности действий, то они станут более усидчивыми и вдумчивыми и будут понимать, что планомерный труд — это важная составляющая в любой работе.
+                              Все дети приобретают и развивают навыки по-разному. Но в большинстве случаев это не мгновенный результат, а итог работы одного-двух семестров. И здорово, когда эти знания ребята могут применить не только в лего-конструировании, но и в жизни.
+                              В нашем Клубе занятия по лего-конструированию будут проходить в субботу, записаться можно по телефону 89004594856
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="col-6 col-md">
