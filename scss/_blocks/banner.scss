@@ -9,8 +9,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 50%;
-  border-bottom: 6px dotted green;
-  border-top: 6px dotted green;
+  border-bottom: 6px dotted $logo-color;
+  border-top: 6px dotted $logo-color;
   box-shadow:
     0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
@@ -19,7 +19,7 @@
 
 .banner__text {
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 20px;
   font-family: $main-font;
   font-size: 20px;

@@ -6,16 +6,15 @@
   width: 150px;
   min-height: 60px;
   margin-right: auto;
+
+  &--footer {
+    justify-content: flex-start;
+  }
 }
 
 .social__link {
-  display: block;
-  width: 60px;
-  height: 60px;
-}
-
-.social__icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 60px;
   height: 60px;
 
@@ -24,7 +23,6 @@
 
   &--vk {
     background-color: #4a76a8;
-    background-image: url("/img/vk.png");
     background-position: center;
     background-size: 40px 40px;
     opacity: 1;
@@ -32,7 +30,6 @@
 
   &--whatsapp {
     background-color: green;
-    background-image: url("/img/whatsapp.png");
     background-size: 40px 40px;
     background-position: center;
     opacity: 1;
@@ -42,4 +39,23 @@
   &:focus {
     opacity: 0.6;
   }
+}
+
+.social__link svg {
+  margin: 0 auto;
+
+  fill: #ffffff;
+}
+
+.social--footer .social__link--vk,
+.social--footer .social__link--whatsapp {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  background-color: transparent;
+}
+
+.social--footer .social__link svg {
+  fill: grey;
 }

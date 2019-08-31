@@ -2,8 +2,11 @@
   width: 100%;
   min-height: 300px;
 
-  background-color: bisque;
-  box-shadow: 0 2px 2px 2px rgba(#000000, 0.3);
+  background-color: $main-color;
+  background-image: url("/img/pineapple-cut.png");
+  background-repeat: repeat;
+  box-shadow: 0 1px 1px 1px rgba(#000000, 0.3);
+  z-index: 100;
 }
 
 .subscription__item {

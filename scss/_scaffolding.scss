@@ -9,11 +9,10 @@ body {
   font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   color: #000;
 
-  background-color: grey;
-  background-image: url("../img/bg-main.jpg");
+  background-color: $logo-color;
+  background-image: url("../img/tree-bark.png");
   background-position: 0 0;
   background-repeat: repeat;
-  background-size: 5616px 3744px;
 }
 
 a {
@@ -47,4 +46,32 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+#top {
+  position: relative;
+}
+
+.page-up {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 35;
+  border-radius: 50%;
+  background: $logo-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.page-up svg {
+  margin: 0 auto;
+
+  fill: #ffffff;
 }
