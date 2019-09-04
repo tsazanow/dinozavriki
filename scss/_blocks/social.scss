@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 150px;
+  width: 200px;
   min-height: 60px;
   margin-right: auto;
 
@@ -35,6 +35,13 @@
     opacity: 1;
   }
 
+  &--instagram {
+    background-color: violet;
+    background-size: 40px 40px;
+    background-position: center;
+    opacity: 1;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -48,7 +55,8 @@
 }
 
 .social--footer .social__link--vk,
-.social--footer .social__link--whatsapp {
+.social--footer .social__link--whatsapp,
+.social--footer .social__link--instagram {
   width: 40px;
   height: 40px;
   margin-right: 10px;
