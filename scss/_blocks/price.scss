@@ -3,6 +3,7 @@
   min-height: 400px;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
 
   background-color: #f7aa03;
   box-shadow:
@@ -10,15 +11,21 @@
     0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-// .price__wrapper {
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   flex-direction: row;
-// }
+.price__title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
 
 .price__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   max-width: 320px;
   padding: 25px 30px;
   margin: 20px auto;
@@ -29,33 +36,20 @@
   box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.08);
 }
 
+.price__head {
+  width: 100%;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
 .price__head h3 {
-  float: left;
   font-size: 22px;
   font-weight: normal;
 }
 
-@media (max-width:1200px) {
-  .price__head h3 {
-    float: none;
-  }
-}
-
-.price__head a.btn {
-  float: right;
-  margin-top: 6px;
-
-  border: 0px;
-}
-
-@media (max-width:1200px) {
-  .price__head a.btn {
-    float: none;
-    margin-top: 20px;
-  }
-}
-
 .price__para {
+  width: 100%;
   margin-top: 30px;
   padding: 10px 20px;
   background: #fcfcfc;
@@ -73,6 +67,10 @@
   &--green {
     border-top: 5px solid #51d466;
   }
+
+  &--blue {
+    border-top: 5px solid blueviolet;
+  }
 }
 
 .price__para p {
@@ -83,6 +81,8 @@
 }
 
 .price__features {
+  width: 100%;
+  min-height: 80px;
   margin-top: 20px;
 }
 
