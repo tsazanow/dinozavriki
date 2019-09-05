@@ -1,6 +1,93 @@
 .feedback {
   width: 100%;
-  min-height: 300px;
+  min-height: 500px;
+  margin: 0;
+  padding: 40px 0;
 
-  background-color: cyan;
+  background-color: #ffffff;
+  background-image: url("/img/pineapple-cut.png");
+  background-repeat: repeat;
+}
+
+.feedback__quote {
+  position: relative;
+}
+
+.feedback__quote blockquote {
+  padding: 0px;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.feedback__quote blockquote p {
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.feedback__quote blockquote:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-top: 0.83333em solid #ccc;
+  border-right: 0.86667em solid transparent;
+}
+
+.feedback__quote--green blockquote {
+  background-color: #32c5d2;
+}
+
+.feedback__quote--green blockquote:before {
+  border-top-color: #32c5d2;
+}
+
+.feedback__quote--dark blockquote {
+  background-color: #555;
+}
+
+.feedback__quote--dark blockquote:before {
+  border-top-color: #555;
+}
+
+.feedback__quote-footer {
+  margin: 10px 0;
+}
+
+.feedback__quote-footer .feedback__quote-icon img {
+  float: left;
+  max-width: 90px;
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.feedback__quote-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.feedback__quote-whois {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
 }
