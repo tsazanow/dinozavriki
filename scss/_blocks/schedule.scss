@@ -1,6 +1,24 @@
 .schedule {
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
 
-  background-color: grey;
+  background-color: transparent;
+}
+
+.schedule__title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.schedule__head,
+.schedule__class {
+  text-align: center;
 }
