@@ -16,12 +16,12 @@ class ContactMailer
      * E-mail отправителя
      * @var string
      */
-    private static $emailFrom = 'send@yandex.ru';
+    private static $emailFrom = 'tema-sazanow2014@yandex.ru';
     /**
      * E-mail получателя
      * @var string
      */
-    private static $emailTo = 'admin@yandex.ru';
+    private static $emailTo = 'tema.sazanow@yandex.ru';
 
     /**
      * Отправляет писмо, если письмо отправлено,
@@ -48,7 +48,7 @@ class ContactMailer
         // Логин или E-mail целиком
         $mailer->Username = self::$emailFrom;
         // Пароль от почтового ящика
-        $mailer->Password = 'XXXXXXXX';
+        $mailer->Password = 'temarulez969';
         // Протокол соединения
         $mailer->SMTPSecure = 'ssl';
         // Порт для исходящаей почты
@@ -66,7 +66,7 @@ class ContactMailer
         $mailer->Subject = 'Заполнена форма обратной связи';
         // Основное тело письма
         $mailer->Body = $body;
-        
+
         // Отправляет письмо
         if ($mailer->send()) {
         	return true;

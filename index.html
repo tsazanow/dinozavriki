@@ -382,7 +382,62 @@
       <section class="price" id="price">
         <h2 class="price__title">Наши цены</h2>
         <div class="container">
-          <div class="price__wrapper row">
+          <table class="price__table table-responsive-md shadow-lg table-light table-striped table-bordered">
+            <thead>
+              <tr>
+                <th class="price__table-header" scope="col"></th>
+                <th class="price__table-header table-dark" scope="col">Абонемент на 4 занятия</th>
+                <th class="price__table-header table-dark" scope="col">Абонемент на 8 занятий</th>
+                <th class="price__table-header table-dark" scope="col">Индивидуальное занятие</th>
+                <!-- <th scope="col">Разовое посещение</th> -->
+              </tr>
+            </thead>
+            <tbody class="price__table-body">
+              <tr>
+                <th class="price__table-header bg-warning" scope="row">"Няня на час"</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th class="price__table-header table-primary" scope="row">Занятия группа малышей 1-2 года</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th class="price__table-header table-secondary" scope="row">Занятия группа малышей 2-3 года</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th class="price__table-header table-danger" scope="row">Английский язык 3-5 лет</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th class="price__table-header bg-info" scope="row">Лего-конструирование 5-7 лет</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th class="price__table-header bg-success" scope="row">Лего-конструирование 3-5 лет</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th class="price__table-header bg-danger" scope="row">Подготовка к школе 5-7 лет</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <div class="price__wrapper row">
             <div class="price__item col-md-4">
               <div class="price__head">
                 <h3>Группа с 9 месяцев <br> (мама + малыш)</h3>
@@ -392,15 +447,7 @@
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content
                   of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -410,13 +457,7 @@
               <div class="price__para price__para--red">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere amet, consec erat a ante Lorem sit amet.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li><strong> &nbsp; &nbsp;Storage - 10GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 1GB</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 5</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -426,14 +467,7 @@
               <div class="price__para price__para--lblue">
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has amet, consec roots in a piece of classical Latin.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li><strong> &nbsp; &nbsp;Storage - 12GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 2GB</li>
-                  <li> &nbsp; &nbsp;Email-Id - 10</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 10</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -443,15 +477,7 @@
               <div class="price__para price__para--green">
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -462,15 +488,7 @@
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content
                   of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -481,15 +499,7 @@
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content
                   of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -500,15 +510,7 @@
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content
                   of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
             <div class="price__item col-md-4">
               <div class="price__head">
@@ -519,23 +521,15 @@
                 <p>It is a long established fact that a reader will be distracted by amet, consec the readable content
                   of a page.</p>
               </div>
-              <!-- <div class="price__features">
-                <ul class="list-unstyled">
-                  <li> &nbsp; &nbsp;<strong>Storage - 15GB</strong></li>
-                  <li> &nbsp; &nbsp;Bandwidth - 3GB</li>
-                  <li> &nbsp; &nbsp;Email-id - 15</li>
-                  <li> &nbsp; &nbsp;Sql-Database - 12</li>
-                  <li> &nbsp; &nbsp;Phone - Support</li>
-                </ul>
-              </div> -->
+
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="schedule" id="schedule">
         <h2 class="schedule__title">Расписание занятий клуба</h2>
         <div class="container">
-          <table class="table-responsive shadow-lg table-striped table-light table-bordered">
+          <table class="schedule__table table-responsive shadow-lg table-striped table-light table-bordered">
             <thead>
               <tr>
                 <th scope="col" class="schedule__head">#</th>
@@ -849,7 +843,10 @@
         </div>
       </section>
       <section class="map" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.5110678637266!2d34.37295111568033!3d61.765460120387964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46a1ecff715eac45%3A0x821193fc6f8b510e!2z0YPQuy4g0KDQvtCy0LjQviwgMTLQkCwg0J_QtdGC0YDQvtC30LDQstC-0LTRgdC6LCDQoNC10YHQvy4g0JrQsNGA0LXQu9C40Y8sIDE4NTAyNg!5e0!3m2!1sru!2sru!4v1566432652397!5m2!1sru!2sru" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- <div class="container"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.5110678637266!2d34.37295111568033!3d61.765460120387964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46a1ecff715eac45%3A0x821193fc6f8b510e!2z0YPQuy4g0KDQvtCy0LjQviwgMTLQkCwg0J_QtdGC0YDQvtC30LDQstC-0LTRgdC6LCDQoNC10YHQvy4g0JrQsNGA0LXQu9C40Y8sIDE4NTAyNg!5e0!3m2!1sru!2sru!4v1566432652397!5m2!1sru!2sru" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img src="img/map.jpg" width="1302" height="400" alt="Карта">
+        <!-- </div> -->
       </section>
     </main>
     <footer class="main-footer pt-4 pt-md-5 border-top">
