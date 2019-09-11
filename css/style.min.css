@@ -8498,6 +8498,7 @@ img {
 
 .schedule__head,
 .schedule__class {
+  padding: 10px;
   text-align: center; }
 
 .teachers {
@@ -8578,7 +8579,8 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
-  background-color: #f7aa03;
+  background-image: url("/img/memphis.png");
+  background-repeat: repeat;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -8588,18 +8590,30 @@ img {
   padding: 0;
   padding-top: 40px;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 3px black; }
+  color: black;
+  text-shadow: 1px 1px 3px white; }
 
 .price__table {
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-radius: 5px; }
 
 .price__table-header {
   padding: 10px;
   text-align: center; }
 
 .price__table-body td {
-  text-align: center; }
+  font-weight: bold;
+  text-align: center;
+  border: 1px dotted grey; }
+
+.price__icon {
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url("/img/ruble-sign.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px; }
 
 .feedback {
   width: 100%;
