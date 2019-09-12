@@ -8535,8 +8535,8 @@ img {
 
 .gallery {
   width: 100%;
-  min-height: 300px;
-  padding-bottom: 20px; }
+  min-height: 400px;
+  padding-bottom: 60px; }
 
 .gallery__title {
   margin: 40px auto;
@@ -8544,22 +8544,28 @@ img {
   color: white;
   text-shadow: 1px 1px 3px black; }
 
+.gallery__list {
+  min-width: 300px;
+  min-height: 300px; }
+
 .gallery__item {
-  display: inline-block;
-  width: 300px;
-  height: 200px;
+  display: block;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
-  margin: 0;
-  margin-left: 20px;
-  padding: 0 5px; }
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding: 20px 0;
+  padding-left: 10px; }
 
 .gallery__filter {
   margin-left: 20px; }
 
 .gallery__item img {
   display: block;
-  width: 300px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   -webkit-filter: grayscale(0);
@@ -8755,6 +8761,9 @@ img {
   .slides__item--english {
     background-image: url("/img/eng.jpg");
     background-position: center; }
+  .slides__item--lego {
+    background-image: url("/img/lego-2.jpg");
+    background-position: center; }
 
 .slides__indicators {
   margin-bottom: 20px; }
@@ -8787,6 +8796,10 @@ img {
 
 .slides__btn {
   margin: 40px auto; }
+  .slides__btn--header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px; }
 
 .button {
   font-family: "OpenSans";

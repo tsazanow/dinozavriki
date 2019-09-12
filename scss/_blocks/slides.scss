@@ -20,6 +20,11 @@
     background-image: url("/img/eng.jpg");
     background-position: center;
   }
+
+  &--lego {
+    background-image: url("/img/lego-2.jpg");
+    background-position: center;
+  }
 }
 
 .slides__indicators {
@@ -62,4 +67,10 @@
 
 .slides__btn {
   margin: 40px auto;
+
+  &--header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }

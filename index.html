@@ -184,7 +184,6 @@
         </div>
       </section>
       <section class="classes col-md-12" id="classes">
-        <!-- <div class="wrapper"> -->
         <h2 class="visually-hidden classes__title">Занятия</h2>
         <div class="classes__slides slides bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -192,10 +191,16 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
             </ol>
             <div class="slides__list carousel-inner">
               <div class="slides__item slides__item--nanny carousel-item active">
                 <h5 class="slides__title slides__title--header d-md-none">Услуга<br> "Няня на час"</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#nanny">
+                  Подробнее
+                </button>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Услуга "Няня на час"</h5>
                   <hr class="my-4">
@@ -215,7 +220,11 @@
                 </div>
               </div>
               <div class="slides__item slides__item--education carousel-item">
-                <h5 class="slides__title slides__title--header d-md-none">Развивающие занятия</h5>
+				<h5 class="slides__title slides__title--header d-md-none">Развивающие занятия</h5>
+				<button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none" data-toggle="modal"
+						data-target="#develop">
+					Подробнее
+				</button>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Развивающие занятия</h5>
                   <hr class="my-4">
@@ -229,7 +238,7 @@
                     возрастной группе мы проводим именно комплексные занятия. И таким образом выполняем полезные задачи
                     не только для детей, но и для родителей.</p>
                   <button type="button" class="slides__btn button btn btn-info btn-lg" data-toggle="modal"
-                          data-target="#lego">
+                          data-target="#develop">
                     Подробнее
                   </button>
                 </div>
@@ -237,6 +246,11 @@
               <div class="slides__item slides__item--english carousel-item">
                 <h5 class="slides__title slides__title--header d-md-none">Группа английского языка для детей
                   3-5 лет</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#english">
+                  Подробнее
+                </button>
                 <div class="slides__caption carousel-caption d-none d-md-block">
                   <h5 class="slides__title">Группа английского языка для детей 3-5 лет</h5>
                   <hr class="my-4">
@@ -257,18 +271,43 @@
                   </button>
                 </div>
               </div>
+              <div class="slides__item slides__item--lego carousel-item">
+                <h5 class="slides__title slides__title--header d-md-none">Лего-конструирование</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#lego">
+                  Подробнее
+                </button>
+                <div class="slides__caption carousel-caption d-none d-md-block">
+                  <h5 class="slides__title">Лего-конструирование</h5>
+                  <hr class="my-4">
+                  <p class="slides__text">В нашем Клубе занятия по лего-конструированию будут проходить по субботам для
+                    ребят с 3 лет!</p>
+                  <hr class="my-4">
+                  <p class="slides__text">
+                    Лего-конструирование – это
+                    занимательный материал, стимулирующий детскую фантазию, воображение, формирующий моторные
+                    навыки.Во время игры с Лего-конструктором включаются различные группы мышц, происходит
+                    развитие и коррекция моторики рук.
+                  </p>
+                  <button type="button" class="slides__btn button btn btn-info btn-lg" data-toggle="modal"
+                          data-target="#lego">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <span class="sr-only">Предыдущий</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <span class="sr-only">Следующий</span>
             </a>
           </div>
         </div>
-        <!-- </div> -->
+
       </section>
       <section class="teachers" id="teachers">
         <div class="wrapper">
@@ -488,20 +527,20 @@
               <tr>
                 <th scope="row" class="schedule__head table-dark">10:00</th>
                 <td rowspan="2" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <!-- <td>Thornton</td> -->
+
                 <td rowspan="2" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <!-- <td>@mdo</td> -->
+
                 <td rowspan="2" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
                 <td></td>
                 <th scope="row" class="schedule__head table-dark">10:00</th>
               </tr>
               <tr>
                 <th scope="row" class="schedule__head table-dark">11:00</th>
-                <!-- <td>Larry the Bird</td> -->
+
                 <td></td>
-                <!-- <td>@twitter</td>-->
+
                 <td></td>
-                <!-- <td>@mdo</td> -->
+
                 <td rowspan="2" class="schedule__class table-danger">Английский язык 3-5 лет</td>
                 <th scope="row" class="schedule__head table-dark">11:00</th>
               </tr>
@@ -512,7 +551,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <!-- <td>@mdo</td> -->
+
                 <th scope="row" class="schedule__head table-dark">12:00</th>
               </tr>
               <tr>
@@ -542,7 +581,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <!-- <td>@mdo</td> -->
+
                 <th scope="row" class="schedule__head table-dark">15:00</th>
               </tr>
               <tr>
@@ -572,26 +611,17 @@
                 <td rowspan="3" class="schedule__class bg-warning">Занятия группа малышей 3-5 лет</td>
                 <td rowspan="3" class="schedule__class bg-danger">Подготовка к школе 5-7 лет</td>
                 <td rowspan="3" class="schedule__class bg-warning">Занятия группа малышей 3-5 лет</td>
-                <!-- <td>@mdo</td> -->
+
                 <th scope="row" class="schedule__head table-dark">17:30</th>
               </tr>
               <tr>
                 <th scope="row" class="schedule__head table-dark">18:00</th>
-                <!-- <td>Larry the Bird</td> -->
-                <!-- <td>Larry the Bird</td> -->
-                <!-- <td>@twitter</td> -->
-                <!-- <td>@mdo</td> -->
-                <!-- <td>@mdo</td> -->
-                <!-- <td>@mdo</td> -->
+
                 <th scope="row" class="schedule__head table-dark">18:00</th>
               </tr>
               <tr>
                 <th scope="row" class="schedule__head table-dark">18:30</th>
-                <!-- <td>Larry the Bird</td> -->
-                <!-- <td>Larry the Bird</td> -->
-                <!-- <td>@twitter</td> -->
-                <!-- <td>@mdo</td> -->
-                <!-- <td>@mdo</td> -->
+
                 <td></td>
                 <th scope="row" class="schedule__head table-dark">18:30</th>
               </tr>
@@ -933,10 +963,7 @@
                               <img src="img/lego.jpg" width="202" height="220" class="details__modal-img card-img-top"
                                    alt="Лего-конструирование">
                             </div>
-                            <p class="details__modal-text col-md-12 mt-auto mb-auto">Лего-конструирование – это
-                              занимательный материал, стимулирующий детскую фантазию, воображение, формирующий моторные
-                              навыки.Во время игры с Лего-конструктором включаются различные группы мышц, происходит
-                              развитие и коррекция моторики рук.
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
                               На кружках по лего-конструированию дети развивают творческое и пространственное мышление,
                               логику, навыки программирования и работы в коллективе.
                               На занятиях по лего-конструированию дети учатся и логике, и воображению. С одной стороны,
@@ -950,8 +977,65 @@
                               Все дети приобретают и развивают навыки по-разному. Но в большинстве случаев это не
                               мгновенный результат, а итог работы одного-двух семестров. И здорово, когда эти знания
                               ребята могут применить не только в лего-конструировании, но и в жизни.
-                              В нашем Клубе занятия по лего-конструированию будут проходить в субботу, записаться можно
-                              по телефону 89004594856
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="text-muted" href="#develop" data-toggle="modal" data-target="#develop">Развивающие занятия</a>
+                <div class="details__modal modal fade" id="develop" tabindex="-1" role="dialog"
+                     aria-labelledby="development"
+                     aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="developLabel">Развивающие занятия</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/education-2.jpg" width="202" height="220"
+                                   class="details__modal-img card-img-top"
+                                   alt="Развивающие занятия">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto"> Развивающие занятия. Зачем они
+                              нужны?
+                              Ребенок – это уже личность, он неутомимо исследует все, что его окружает. Современные
+                              родители считают развитие детей важным составляющим полноценного развития. Однако, бывают
+                              и сомневающиеся. Много разных мнений. И истина, вероятно, где-то посередине. Некоторые
+                              родители считают, что до общепринятых сада и школы незачем лишний раз специально
+                              заниматься с детьми. А кто-то очень активно нагружает ребенка всеми возможными занятиями,
+                              которые только есть.
+                              Чтобы понять, что дают развивающие занятия нашим детям, давайте разберем, что вообще
+                              должны нести любые развивающие занятия ребенку.
+                              Главное слово в предыдущем предложении не «занятия» и даже не «зачем», а «ребенок»
+                              В раннем возрасте у ребенка закладываются важнейшие навыки и способности. Занятия с
+                              ребёнком помогают ему раскрыть свои таланты, развить способности. От того, какой фундамент
+                              будет заложен в ребенка изначально, зависит все дальнейшее его развитие.
+                              И, конечно, речь идет о комплексном, гармоничном развитии. Иногда, когда развитием не
+                              занимаются, или оно бессистемно, бывают перекосы в ту или иную сферу. Кому-то много
+                              читают, дают слушать музыку, но мало играют в подвижные игры и не занимаются развитием
+                              мелкой моторики. А кто-то из родителей, наоборот, упор делает на тело, физическое
+                              развитие, забывая о других гранях растущей личности.
+                              Особенно важен в жизни ребенка этап раннего развития. Когда только формируется мозг, когда
+                              еще не выявлены и не раскрыты таланты.
+                              В период формирования мозга обучение происходит гораздо проще и легче, чем обучение во
+                              взрослой жизни. Обучение на ранних этапах развития конструирует мозг ребенка и обогащает
+                              развитие его многогранной личности. Также раннее развитие стимулирует правильное
+                              формирование речи и мышления. Многих родителей настораживает понятие «развивающие
+                              занятия», т.к. они не понимают, что учить можно без принуждения, играя. Весь процесс
+                              проходит без трудностей, радостно и легко.
                             </p>
                           </div>
                         </div>
@@ -968,13 +1052,22 @@
           <div class="col-6 col-md">
             <h5>Материалы на сайте</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/pattern">Pattern vector
-                  created by freepik</a></li>
-              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Kids">Kids photo created by
-                  freepik</a></li>
-              <li><a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Background">Background photo
-                  created by rawpixel.com</a></li>
-              <!-- <li><a class="text-muted" href="#">Terms</a></li> -->
+              <li>
+                <a class="text-muted" href="https://www.freepik.com/free-photos-vectors/pattern">Pattern vector
+                  created by freepik</a>
+              </li>
+              <li>
+                <a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Kids">Kids photo created by
+                  freepik</a>
+              </li>
+              <li>
+                <a class="text-muted" href="https://www.freepik.com/free-photos-vectors/Background">Background photo
+                  created by rawpixel.com</a>
+              </li>
+              <li>
+                <a class="text-muted" href="https://www.freepik.com/free-photos-vectors/frame">Frame photo created by
+                  freepik</a>
+              </li>
             </ul>
           </div>
         </div>
