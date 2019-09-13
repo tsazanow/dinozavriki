@@ -6,7 +6,12 @@
   padding: 0;
 
   background-color: $main-color;
-  background-image: url("/img/pineapple-cut.png");
+  background-image: url("../img/pineapple-cut.png");
   background-repeat: repeat;
   z-index: 40;
+}
+
+.main-footer__title {
+  font-weight: bold;
+  margin-bottom: 10px;
 }

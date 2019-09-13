@@ -5,7 +5,7 @@
   padding: 0;
   padding-bottom: 40px;
 
-  background-image: url("/img/memphis.png");
+  background-image: url("../img/memphis.png");
   background-repeat: repeat;
   box-shadow:
     0 14px 28px rgba(0, 0, 0, 0.25),
@@ -43,9 +43,6 @@
 .price__icon {
   display: inline-block;
   margin-left: 5px;
-  background-image: url("/img/ruble-sign.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
   width: 12px;
   height: 12px;
 }

@@ -7,22 +7,22 @@
   box-shadow: 0 2px 2px 3px rgba(#000000, 0.3);
 
   &--nanny {
-    background-image: url("/img/nanny.jpg");
+    background-image: url("../img/nanny.jpg");
     background-position: center;
   }
 
   &--education {
-    background-image: url("/img/education.jpg");
+    background-image: url("../img/education.jpg");
     background-position: center;
   }
 
   &--english {
-    background-image: url("/img/eng.jpg");
+    background-image: url("../img/eng.jpg");
     background-position: center;
   }
 
   &--lego {
-    background-image: url("/img/lego-2.jpg");
+    background-image: url("../img/lego-2.jpg");
     background-position: center;
   }
 }

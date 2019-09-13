@@ -8,6 +8,7 @@
 prepros-6.config
 node_modules/
 build/
+mailer/
 npm-debug.*
 source/css/*.css
 package-lock.json
