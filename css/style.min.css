@@ -8264,6 +8264,7 @@ img {
     text-align: center; }
 
 .page-header__text {
+  font-size: 16px;
   color: white;
   text-shadow: 1px 1px 4px black; }
 
@@ -8557,20 +8558,20 @@ img {
   min-height: 400px; }
 
 .gallery__item {
-  width: 300px;
-  height: 340px;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0;
   overflow: hidden;
-  border: none;
   background-color: transparent;
-  padding: 30px 10px;
-  padding-left: 20px; }
+  border: none; }
 
 .gallery__item img {
   display: block;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 10px;
   -webkit-filter: grayscale(0);
   filter: none;
   border-radius: 5px; }
@@ -8836,7 +8837,7 @@ img {
   color: black;
   text-shadow: 1px 1px 3px #ffffff;
   background-color: bisque;
-  border: 1px solid bisque;
+  border: 1px solid #0ba57d;
   -webkit-box-shadow: 1px 1px 0 1px rgba(128, 128, 128, 0.5);
   box-shadow: 1px 1px 0 1px rgba(128, 128, 128, 0.5); }
   .filter__link:hover, .filter__link:focus {
