@@ -18,7 +18,7 @@
 }
 
 .gallery__container {
-  width: 1140px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -27,11 +27,7 @@
 .gallery__item {
   min-width: 320px;
   height: 250px;
-  // margin: 0 auto;
-  margin-bottom: 5px;
-
-  // margin: 5px;
-  // padding: 5px;
+  margin-bottom: 10px;
 
   overflow: hidden;
   background-color: transparent;
@@ -39,10 +35,12 @@
 }
 
 .gallery__item-link {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   margin: auto;
+  padding: 5px;
 
   border-radius: 5px;
   background-color: #fff;
@@ -51,9 +49,8 @@
 .gallery__item-link img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 240px;
   margin: 0 auto;
-  padding: 15px;
 
   -webkit-filter: grayscale(0);
   filter: none;
