@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -75,12 +75,15 @@
               <li class="main-nav__item nav-item">
                 <a class="main-nav__link nav-link" href="index.html#price">Цены</a>
               </li>
-              <li class="main-nav__item nav-item">
+              <!-- <li class="main-nav__item nav-item">
                 <a class="main-nav__link nav-link" href="index.html#schedule">Расписание</a>
-              </li>
+              </li> -->
               <!-- <li class="main-nav__item nav-item">
                 <a class="main-nav__link nav-link" href="index.html#feedback">Отзывы</a>
               </li> -->
+              <li class="main-nav__item nav-item">
+                <a class="main-nav__link nav-link" href="kids.html">Наши детки</a>
+              </li>
               <li class="main-nav__item nav-item">
                 <a class="main-nav__link nav-link" href="index.html#subs">Для связи</a>
               </li>
@@ -207,9 +210,36 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
             </ol>
             <div class="slides__list carousel-inner">
-              <div class="slides__item slides__item--nanny carousel-item active">
+              <div class="slides__item slides__item--summer carousel-item active">
+                <h5 class="slides__title slides__title--header d-md-none">Летняя программа занятий</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#summer">
+                  Подробнее
+                </button>
+                <div class="slides__caption carousel-caption d-none d-md-block">
+                  <h5 class="slides__title">Летняя программа занятий</h5>
+                  <hr class="my-4">
+                  <p class="slides__text">УВАЖАЕМЫЕ РОДИТЕЛИ! <br>
+                    С 1 августа в нашем клубе будет работать ЛЕТНЯЯ ПРОГРАММА ЗАНЯТИЙ для детей с 4 до 10 лет!</p>
+                  <hr class="my-4">
+                  <p class="slides__text">1 неделя - географическая программа "Путешествие по странам мира" <br>
+                    2 неделя - программа "Город профессий" <br>
+                    3 неделя - программа "Да Винчи (наука + творчество) <br>
+                    4 неделя - программа" Моя Карелия"
+                  </p>
+                  <button type="button" class="slides__btn button btn btn-info btn-lg" data-toggle="modal"
+                          data-target="#summer">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+
+              <div class="slides__item slides__item--nanny carousel-item">
                 <h5 class="slides__title slides__title--header d-md-none">Услуга<br> "Няня на час"</h5>
                 <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
                         data-toggle="modal"
@@ -287,7 +317,59 @@
                   </button>
                 </div>
               </div>
-              <div class="slides__item slides__item--lego carousel-item">
+
+              <div class="slides__item slides__item--finnish carousel-item">
+                <h5 class="slides__title slides__title--header d-md-none">Занятия по финскому языку</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#finnish">
+                  Подробнее
+                </button>
+                <div class="slides__caption carousel-caption d-none d-md-block">
+                  <h5 class="slides__title">Занятия по финскому языку</h5>
+                  <hr class="my-4">
+                  <p class="slides__text">Продолжаем набор группы по изучению финского языка!</p>
+                  <hr class="my-4">
+                  <p class="slides__text">
+                    Детки с 3х до 7 лет.
+                    Занятия по выходным.
+                    Малочисленная группа.
+                  </p>
+                  <button type="button" class="slides__btn button btn btn-info btn-lg" data-toggle="modal"
+                          data-target="#finnish">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+
+              <div class="slides__item slides__item--logopedist carousel-item">
+                <h5 class="slides__title slides__title--header d-md-none">Занятия c логопедом</h5>
+                <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
+                        data-toggle="modal"
+                        data-target="#logopedist">
+                  Подробнее
+                </button>
+                <div class="slides__caption carousel-caption d-none d-md-block">
+                  <h5 class="slides__title">Занятия c логопедом</h5>
+                  <hr class="my-4">
+                  <p class="slides__text">Логопед спешит на помощь!</p>
+                  <hr class="my-4">
+                  <p class="slides__text">
+                    Ребенок не рождается со сложившейся речью. Постепенно, шаг за шагом, он учится правильно и
+                    четко произносить звуки,
+                    связывать между собой слова, строить предложения, ясно и последовательно излагать свои
+                    мысли. Но, к сожалению, иногда
+                    речевое развитие происходит с опозданием или с особенностями развития. В этом случае
+                    поможет логопед – специалист,
+                    исправляющий нарушения речи.
+                  </p>
+                  <button type="button" class="slides__btn button btn btn-info btn-lg" data-toggle="modal"
+                          data-target="#logopedist">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="slides__item slides__item--lego carousel-item">
                 <h5 class="slides__title slides__title--header d-md-none">Лего-конструирование</h5>
                 <button type="button" class="slides__btn slides__btn--header button btn btn-info btn-lg d-md-none"
                         data-toggle="modal"
@@ -311,7 +393,7 @@
                     Подробнее
                   </button>
                 </div>
-              </div>
+              </div> -->
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -465,6 +547,7 @@
       </section>
       <section class="price" id="price">
         <h2 class="price__title">Стоимость занятий</h2>
+        <p class="price__sale">Скидки многодетным семьям при предъявлении удостоверения!</p>
         <div class="container">
           <table class="price__table table-responsive-md shadow-lg table-hover table-light table-bordered">
             <thead>
@@ -481,15 +564,16 @@
                 <td>-</td>
               </tr>
               <tr>
-                <th class="price__table-header table-primary" scope="row">Занятия группа малышей 1-2 года</th>
-                <td rowspan="4">400 руб.</td>
-                <td rowspan="4">-</td>
+                <th class="price__table-header table-primary" scope="row">Занятия группа малышей 0,9-2 года</th>
+                <td rowspan="4">500 руб.</td>
+                <td rowspan="2">1800 руб./8 занятий</td>
               </tr>
               <tr>
                 <th class="price__table-header table-secondary" scope="row">Занятия группа малышей 2-3 года</th>
               </tr>
               <tr>
                 <th class="price__table-header bg-warning" scope="row">Занятия группа малышей 3-5 лет</th>
+                <td rowspan="2">2100 руб./8 занятий</td>
               </tr>
               <tr>
                 <th class="price__table-header bg-danger" scope="row">Подготовка к школе 5-7 лет</th>
@@ -499,262 +583,31 @@
                 <td>450 руб.</td>
                 <td>-</td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <th class="price__table-header bg-info" scope="row">Лего-конструирование 5-7 лет</th>
                 <td rowspan="2">350 руб.</td>
                 <td rowspan="2">-</td>
-              </tr>
+              </tr> -->
               <tr>
-                <th class="price__table-header bg-success" scope="row">Лего-конструирование 3-5 лет</th>
+                <th class="price__table-header bg-info" scope="row">Финский язык</th>
+                <td rowspan="1">450 руб.</td>
+                <td rowspan="1">-</td>
+              </tr>
+              <!-- <tr>
+                <th class="price__table-header bg-warning" scope="row">Логопед</th>
+                <td rowspan="2">500 руб.</td>
+                <td rowspan="2">-</td>
+              </tr> -->
+              <tr>
+                <th class="price__table-header bg-success" scope="row">Логопед</th>
+                <td rowspan="1">500 руб.</td>
+                <td rowspan="1">-</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
-      <section class="schedule" id="schedule">
-        <h2 class="schedule__title">Расписание занятий клуба</h2>
-        <div class="container">
-          <table class="schedule__table table-responsive shadow-lg table-striped table-light table-bordered">
-            <thead>
-              <tr>
-                <th scope="col" class="schedule__head">#</th>
-                <th scope="col" class="schedule__head table-dark">Понедельник</th>
-                <th scope="col" class="schedule__head table-dark">Вторник</th>
-                <th scope="col" class="schedule__head table-dark">Среда</th>
-                <th scope="col" class="schedule__head table-dark">Четверг</th>
-                <th scope="col" class="schedule__head table-dark">Пятница</th>
-                <th scope="col" class="schedule__head table-dark">Суббота</th>
-                <th scope="col" class="schedule__head">#</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">9:00</th>
-                <td rowspan="2" class="schedule__class table-primary">Занятия группа малышей 1-2 года</td>
-                <td rowspan="2" class="schedule__class table-primary">Занятия группа малышей 1-2 года</td>
-                <td rowspan="2" class="schedule__class table-primary">Занятия группа малышей 1-2 года</td>
-                <td rowspan="2" class="schedule__class table-primary">Занятия группа малышей 1-2 года</td>
-                <td rowspan="2" class="schedule__class table-primary">Занятия группа малышей 1-2 года</td>
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">9:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">10:00</th>
-                <!-- <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> -->
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">10:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">10:30</th>
-                <td rowspan="3" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <td rowspan="3" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <td rowspan="3" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <td rowspan="3" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <td rowspan="3" class="schedule__class table-secondary">Занятия группа малышей 2-3 года</td>
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">10:30</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">11:00</th>
-                <!-- <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> -->
-                <td rowspan="3" class="schedule__class table-danger">Английский язык 3-5 лет</td>
-                <th scope="row" class="schedule__head table-dark">11:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">11:30</th>
-                <!-- <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> -->
-                <!-- <td></td> -->
-                <th scope="row" class="schedule__head table-dark">11:30</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">12:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <!-- <td></td> -->
-                <th scope="row" class="schedule__head table-dark">12:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">13:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">13:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">14:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td rowspan="2" class="schedule__class bg-info">Лего-конструирование 5-7 лет</td>
-                <th scope="row" class="schedule__head table-dark">14:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">15:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
 
-                <th scope="row" class="schedule__head table-dark">15:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">16:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">16:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">17:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td rowspan="3" class="schedule__class bg-success">Лего-конструирование 3-5 лет</td>
-                <th scope="row" class="schedule__head table-dark">17:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">17:30</th>
-                <td rowspan="3" class="schedule__class bg-warning">Занятия группа малышей 3-5 лет</td>
-                <td rowspan="3" class="schedule__class bg-danger">Подготовка к школе 5-7 лет</td>
-                <td rowspan="3" class="schedule__class bg-warning">Занятия группа малышей 3-5 лет</td>
-                <td rowspan="3" class="schedule__class bg-danger">Подготовка к школе 5-7 лет</td>
-                <td rowspan="3" class="schedule__class bg-warning">Занятия группа малышей 3-5 лет</td>
-
-                <th scope="row" class="schedule__head table-dark">17:30</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">18:00</th>
-
-                <th scope="row" class="schedule__head table-dark">18:00</th>
-              </tr>
-              <tr>
-                <th scope="row" class="schedule__head table-dark">18:30</th>
-
-                <td></td>
-                <th scope="row" class="schedule__head table-dark">18:30</th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <!-- <section class="feedback" id="feedback">
-        <h2 class="feedback__title visually-hidden">Отзывы</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 m-b-20">
-              <div class="feedback__quote feedback__quote--dark">
-                <blockquote>
-                  <p class="feedback__quote-text">Я оставляю хороший отзыв мне всё понравилось, надеюсь в дальнейшем
-                    качество не изменится!</p>
-                </blockquote>
-              </div>
-              <div class="feedback__quote-footer text-right">
-                <div class="feedback__quote-icon">
-                  <img src="img/icon-feedback-1.png" alt="Аватар пользователя">
-                </div>
-                <h4 class="feedback__quote-author">Дмитрий</h4>
-                <p class="feedback__quote-whois">
-                  <strong>Папа</strong>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 m-b-20">
-              <div class="feedback__quote feedback__quote--green">
-                <blockquote>
-                  <p class="feedback__quote-text">Согласна! Качество на высоте как и доступность в общем виде!</p>
-                </blockquote>
-              </div>
-              <div class="feedback__quote-footer text-right">
-                <div class="feedback__quote-icon">
-                  <img src="img/icon-feedback-2.png" alt="Аватар пользователя">
-                </div>
-                <h4 class="feedback__quote-author">Надя</h4>
-                <p class="feedback__quote-whois">
-                  <strong>Мама</strong>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4 m-b-20">
-              <div class="feedback__quote feedback__quote--dark">
-                <blockquote>
-                  <p class="feedback__quote-text">И мне помогли от души! Респект за уважение к своей работе и тем кто её
-                    использует в своих целях!</p>
-                </blockquote>
-              </div>
-              <div class="feedback__quote-footer text-right">
-                <div class="feedback__quote-icon">
-                  <img src="img/icon-feedback-3.png" alt="Аватар пользователя">
-                </div>
-                <h4 class="feedback__quote-author">Елена</h4>
-                <p class="feedback__quote-whois">
-                  <strong>Мама</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 m-b-20">
-              <div class="feedback__quote feedback__quote--dark">
-                <blockquote>
-                  <p class="feedback__quote-text">Так держать! Всё на высшем уровне!!!</p>
-                </blockquote>
-              </div>
-              <div class="feedback__quote-footer text-right">
-                <div class="feedback__quote-icon">
-                  <img src="img/icon-feedback-4.png" alt="">
-                </div>
-                <h4 class="feedback__quote-author">Нина</h4>
-                <p class="feedback__quote-whois">
-                  <strong>Мама</strong>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-8 m-b-20">
-              <div class="feedback__quote feedback__quote--green">
-                <blockquote>
-                  <p class="feedback__quote-text">Долго искала организацию предоставляющую подобные услуги. Мне всё
-                    понравилось, думаю в дальнейшем стану постоянным клиентом.</p>
-                </blockquote>
-              </div>
-              <div class="feedback__quote-footer text-right">
-                <div class="feedback__quote-icon">
-                  <img src="img/icon-feedback-5.png" alt="">
-                </div>
-                <h4 class="feedback__quote-author">Малика</h4>
-                <p class="feedback__quote-whois">
-                  <strong>Мама</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="subscription" id="subs">
         <div class="container">
           <h2 class="subscription__title">Как с нами связаться?</h2>
@@ -890,7 +743,8 @@
               <li><a class="text-muted" href="index.html#teachers">Педагоги</a></li>
               <li><a class="text-muted" href="photo.html">Фото</a></li>
               <li><a class="text-muted" href="index.html#price">Цены</a></li>
-              <li><a class="text-muted" href="index.html#schedule">Расписание</a></li>
+              <li><a class="text-muted" href="kids.html">Наши детки</a></li>
+              <!-- <li><a class="text-muted" href="index.html#schedule">Расписание</a></li> -->
               <!-- <li><a class="text-muted" href="index.html#feedback">Отзывы</a></li> -->
               <li><a class="text-muted" href="index.html#subs">Для связи</a></li>
             </ul>
@@ -928,6 +782,46 @@
                               пассивный и активный словарный запас. Важно, что уроки будут проходить на английском
                               языке!
                               Ждем вас с нетерпением!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="text-muted" href="#finnish" data-toggle="modal" data-target="#finnish">Занятия по финскому
+                  языку</a>
+                <div class="details__modal modal fade" id="finnish" tabindex="-1" role="dialog"
+                     aria-labelledby="finnish"
+                     aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="finnishLabel">Занятия по финскому языку</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/finnish.jpg" width="202" height="220"
+                                   class="details__modal-img card-img-top"
+                                   alt="Занятия по финскому языку">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
+                              Продолжаем набор группы по изучению финского языка!
+                              Детки с 3х до 7 лет
+                              Занятия по выходным
+                              Малочисленная группа
+
+                              Желающие могут записываться по телефону 89004594856, WhatsApp /Viber
                             </p>
                           </div>
                         </div>
@@ -981,6 +875,50 @@
                 </div>
               </li>
               <li>
+                <a class="text-muted" href="#logopedist" data-toggle="modal" data-target="#logopedist">Занятия с
+                  логопедом</a>
+                <div class="details__modal modal fade" id="logopedist" tabindex="-1" role="dialog"
+                     aria-labelledby="logopedist"
+                     aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="logopedistLabel">Занятия с логопедом</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/logopedist.jpg" width="202" height="220"
+                                   class="details__modal-img card-img-top"
+                                   alt="Занятия с логопедом">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
+                              Ребенок не рождается со сложившейся речью. Постепенно, шаг за шагом, он учится правильно и
+                              четко произносить звуки,
+                              связывать между собой слова, строить предложения, ясно и последовательно излагать свои
+                              мысли. Но, к сожалению, иногда
+                              речевое развитие происходит с опозданием или с особенностями развития. В этом случае
+                              поможет логопед – специалист,
+                              исправляющий нарушения речи.
+                              В нашем Клубе занятия с логопедом проходят по предварительной записи, все интересующие
+                              вопросы и запись на занятия по
+                              номеру телефона 89004594856
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
                 <a class="text-muted" href="#lego" data-toggle="modal" data-target="#lego">Лего-конструирование</a>
                 <div class="details__modal modal fade" id="lego" tabindex="-1" role="dialog" aria-labelledby="lego"
                      aria-hidden="true">
@@ -1023,7 +961,7 @@
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
               <li>
                 <a class="text-muted" href="#develop" data-toggle="modal" data-target="#develop">Развивающие занятия</a>
                 <div class="details__modal modal fade" id="develop" tabindex="-1" role="dialog"
@@ -1083,6 +1021,55 @@
                   </div>
                 </div>
               </li>
+
+              <li>
+                <a class="text-muted" href="#summer" data-toggle="modal" data-target="#summer">Летняя программа
+                  занятий</a>
+                <div class="details__modal modal fade" id="summer" tabindex="-1" role="dialog"
+                     aria-labelledby="summer-label"
+                     aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="summer-label">Летняя программа занятий</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <img src="img/summer.jpg" width="202" height="220"
+                                   class="details__modal-img card-img-top"
+                                   alt="Летняя программа занятий">
+                            </div>
+                            <p class="details__modal-text col-md-12 mt-auto mb-auto">
+                              УВАЖАЕМЫЕ РОДИТЕЛИ!<br>
+                              С 1 АВГУСТА в нашем клубе будет работать ЛЕТНЯЯ ПРОГРАММА ЗАНЯТИЙ для детей с 4 до 10 ЛЕТ!
+                              <br>
+                              <b>1 неделя - географическая программа "Путешествие по странам мира".</b> <br>
+                              <b>2 неделя - программа "Город профессий".</b> <br>
+                              <b>3 неделя - программа "Да Винчи (наука +творчество).</b> <br>
+                              <b>4 неделя - программа" Моя Карелия".</b> <br>
+
+                              ВНИМАНИЕ! <br>
+                              Возможно записаться на полный и неполный день, 5-дневка! <br>
+                              Записаться на программу или задать все вопросы вы можете по телефону 89004594856,
+                              WhatsApp/Viber. <br>
+                              ПРИХОДИТЕ, У НАС ОЧЕНЬ ИНТЕРЕСНО!
+                              КОЛЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="col-6 col-md">
@@ -1103,6 +1090,11 @@
               <li>
                 <a class="text-muted" href="https://www.freepik.com/free-photos-vectors/frame">Frame photo created by
                   freepik</a>
+              </li>
+              <li>
+                <a class="text-muted" href="https://ru.freepik.com/free-photos-vectors/background">Background by
+                  photoangel -
+                  ru.freepik.com</a>
               </li>
             </ul>
           </div>

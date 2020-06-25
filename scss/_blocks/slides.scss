@@ -25,6 +25,21 @@
     background-image: url("../img/lego-2.jpg");
     background-position: center;
   }
+
+  &--finnish {
+    background-image: url("../img/finnish-3.jpg");
+    background-position: center;
+  }
+
+  &--logopedist {
+    background-image: url("../img/logopedist-2.jpg");
+    background-position: center;
+  }
+
+  &--summer {
+    background-image: url("../img/summer-2.jpg");
+    // background-position: center;
+  }
 }
 
 .slides__indicators {
@@ -54,7 +69,7 @@
 .slides__caption {
   padding-bottom: 20px;
   border-radius: 5px;
-  background-color: rgba($color:black, $alpha: 0.3);
+  background-color: rgba($color: black, $alpha: 0.3);
 }
 
 .slides__text {

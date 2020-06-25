@@ -1,11 +1,13 @@
 .DS_Store
 .idea
+*.map
 *.ai
 *.log
 *.pdf
 *.psd
 *.sublime*
 prepros-6.config
+prepros.config
 node_modules/
 build/
 mailer/
