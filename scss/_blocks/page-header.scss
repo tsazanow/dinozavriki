@@ -17,6 +17,12 @@
     background-image: url("../img/bg-gallery.jpg");
     background-position: 0 30%;
   }
+
+  &--kids {
+    min-height: 400px;
+    background-image: url("../img/bg-kids.jpg");
+    background-position: 0 20%;
+  }
 }
 
 .page-header__hero {
@@ -55,5 +61,5 @@
 .page-header__caption {
   padding: 20px 20px;
   border-radius: 5px;
-  background-color: rgba($color:$logo-color, $alpha: 0.3);
+  background-color: rgba($color: $logo-color, $alpha: 0.3);
 }
